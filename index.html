@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RCI Móvil Colombia | Tecnología, celulares y guías</title>
+
+    <meta
+        name="description"
+        content="RCI Móvil Colombia ofrece guías, información y contenido sobre celulares, tecnología móvil, aplicaciones y recursos digitales."
+    >
+
+    <meta name="author" content="RCI Móvil Colombia">
+
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://rcimobilcolombia.pages.dev/"
+    >
+
+    <!-- OPEN GRAPH -->
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:title"
+        content="RCI Móvil Colombia | Tecnología, celulares y guías"
+    >
+
+    <meta
+        property="og:description"
+        content="Guías, información y recursos sobre celulares, tecnología móvil y herramientas digitales."
+    >
+
+    <meta
+        property="og:url"
+        content="https://rcimobilcolombia.pages.dev/"
+    >
+
+    <meta
+        property="og:site_name"
+        content="RCI Móvil Colombia"
+    >
+
+    <!-- DATOS ESTRUCTURADOS -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "RCI Móvil Colombia",
+        "url": "https://rcimobilcolombia.pages.dev/",
+        "description": "Información, guías y recursos sobre celulares, tecnología móvil y herramientas digitales.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "RCI Móvil Colombia"
+        },
+        "inLanguage": "es-CO"
+    }
+    </script>
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background: #f5f7fa;
+
+            color: #263238;
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #075ea8;
+        }
+
+        a:hover {
+            color: #043d70;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+            background: #0b3d62;
+
+            color: #ffffff;
+
+            border-bottom:
+                1px solid rgba(255,255,255,0.12);
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+        }
+
+        .header-container {
+            width: min(1120px, 92%);
+
+            margin: auto;
+
+            min-height: 72px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 30px;
+        }
+
+        .logo {
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 25px;
+
+            font-weight: 800;
+
+            letter-spacing: .5px;
+
+            white-space: nowrap;
+        }
+
+        .logo:hover {
+            color: #ffffff;
+        }
+
+        nav ul {
+            list-style: none;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 22px;
+        }
+
+        nav a {
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #d7edff;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #0b3d62 0%,
+                    #1167a8 100%
+                );
+
+            color: #ffffff;
+
+            padding: 95px 20px;
+        }
+
+        .hero-container {
+            width: min(900px, 92%);
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size:
+                clamp(34px, 6vw, 55px);
+
+            line-height: 1.12;
+
+            margin-bottom: 22px;
+        }
+
+        .hero p {
+            max-width: 760px;
+
+            margin: auto;
+
+            font-size: 19px;
+
+            color: #eaf5fc;
+        }
+
+        .hero-button {
+            display: inline-block;
+
+            margin-top: 30px;
+
+            padding: 13px 25px;
+
+            background: #ffffff;
+
+            color: #0b3d62;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            border-radius: 7px;
+
+            transition: .2s ease;
+        }
+
+        .hero-button:hover {
+            color: #0b3d62;
+
+            background: #e7f2f9;
+
+            transform: translateY(-1px);
+        }
+
+
+        /* =====================================================
+           MAIN
+        ===================================================== */
+
+        main {
+            width: min(1120px, 92%);
+
+            margin: auto;
+
+            padding: 55px 0;
+        }
+
+
+        /* =====================================================
+           TITULOS
+        ===================================================== */
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            color: #0b3d62;
+
+            font-size: 32px;
+
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #607d8b;
+
+            max-width: 720px;
+
+            margin: auto;
+        }
+
+
+        /* =====================================================
+           CATEGORIAS
+        ===================================================== */
+
+        .category-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+            margin-bottom: 50px;
+        }
+
+        .category-card {
+            background: #ffffff;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            border:
+                1px solid #e2e8ec;
+
+            box-shadow:
+                0 3px 12px rgba(0,0,0,.05);
+        }
+
+        .category-card h3 {
+            color: #0b3d62;
+
+            margin-bottom: 12px;
+
+            font-size: 21px;
+        }
+
+        .category-card p {
+            color: #455a64;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* =====================================================
+           ARTICULOS
+        ===================================================== */
+
+        .article {
+            background: #ffffff;
+
+            padding: 38px;
+
+            border-radius: 10px;
+
+            border:
+                1px solid #e2e8ec;
+
+            margin-bottom: 30px;
+
+            box-shadow:
+                0 3px 12px rgba(0,0,0,.04);
+        }
+
+        .article h2 {
+            color: #0b3d62;
+
+            margin-bottom: 10px;
+
+            font-size: 28px;
+
+            line-height: 1.3;
+        }
+
+        .article h3 {
+            color: #37474f;
+
+            margin-top: 26px;
+
+            margin-bottom: 10px;
+
+            font-size: 20px;
+        }
+
+        .article p {
+            margin-bottom: 16px;
+        }
+
+        .article ul {
+            margin:
+                15px 0 20px 25px;
+        }
+
+        .article li {
+            margin-bottom: 8px;
+        }
+
+        .article-meta {
+            color: #78909c;
+
+            font-size: 14px;
+
+            margin-bottom: 22px;
+        }
+
+
+        /* =====================================================
+           PUBLICIDAD
+        ===================================================== */
+
+        .ad-container {
+            margin: 40px 0;
+
+            padding: 20px;
+
+            background: #ffffff;
+
+            border:
+                1px solid #e2e8ec;
+
+            border-radius: 8px;
+
+            text-align: center;
+        }
+
+        .ad-label {
+            display: block;
+
+            margin-bottom: 12px;
+
+            color: #78909c;
+
+            font-size: 11px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+        .ad-placeholder {
+            min-height: 90px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: #fafbfc;
+
+            color: #90a4ae;
+
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           SOBRE NOSOTROS
+        ===================================================== */
+
+        .about {
+            background: #ffffff;
+
+            padding: 40px;
+
+            border-radius: 10px;
+
+            border:
+                1px solid #e2e8ec;
+
+            margin-bottom: 30px;
+        }
+
+        .about h2 {
+            color: #0b3d62;
+
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            margin-bottom: 15px;
+        }
+
+
+        /* =====================================================
+           CONTACTO
+        ===================================================== */
+
+        .contact-box {
+            background: #eaf4fc;
+
+            padding: 35px;
+
+            border-radius: 10px;
+
+            border:
+                1px solid #c8e1f3;
+        }
+
+        .contact-box h2 {
+            color: #0b3d62;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* =====================================================
+           LEGAL
+        ===================================================== */
+
+        .legal-section {
+            background: #ffffff;
+
+            padding: 40px;
+
+            border-radius: 10px;
+
+            border:
+                1px solid #e2e8ec;
+
+            margin-bottom: 30px;
+        }
+
+        .legal-section h2 {
+            color: #0b3d62;
+
+            margin-bottom: 20px;
+
+            font-size: 28px;
+        }
+
+        .legal-section h3 {
+            color: #37474f;
+
+            margin-top: 25px;
+
+            margin-bottom: 10px;
+
+            font-size: 20px;
+        }
+
+        .legal-section p {
+            margin-bottom: 15px;
+        }
+
+        .legal-section ul {
+            margin:
+                10px 0 20px 25px;
+        }
+
+        .legal-section li {
+            margin-bottom: 8px;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: #0b3d62;
+
+            color: #ffffff;
+
+            padding: 45px 20px 25px;
+
+            margin-top: 30px;
+        }
+
+        .footer-container {
+            width: min(1120px, 92%);
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1.2fr 1fr 1fr;
+
+            gap: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #d7e4eb;
+
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: #d9ebf7;
+
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+
+            text-decoration: underline;
+        }
+
+        .copyright {
+            width: min(1120px, 92%);
+
+            margin: 35px auto 0;
+
+            padding-top: 25px;
+
+            border-top:
+                1px solid rgba(255,255,255,.15);
+
+            color: #c4d4dd;
+
+            text-align: center;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           COOKIES
+        ===================================================== */
+
+        .cookie-banner {
+            position: fixed;
+
+            left: 20px;
+
+            right: 20px;
+
+            bottom: 20px;
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            background: #ffffff;
+
+            color: #263238;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 5px 30px rgba(0,0,0,.20);
+
+            border:
+                1px solid #dce3e7;
+
+            z-index: 9999;
+        }
+
+        .cookie-content {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 25px;
+        }
+
+        .cookie-text {
+            font-size: 14px;
+        }
+
+        .cookie-text strong {
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+        .cookie-text a {
+            color: #075ea8;
+        }
+
+        .cookie-buttons {
+            display: flex;
+
+            gap: 10px;
+
+            flex-shrink: 0;
+        }
+
+        .cookie-button {
+            border: none;
+
+            border-radius: 6px;
+
+            padding: 11px 18px;
+
+            cursor: pointer;
+
+            font-weight: 700;
+
+            font-size: 14px;
+        }
+
+        .cookie-accept {
+            background: #0b3d62;
+
+            color: #ffffff;
+        }
+
+        .cookie-accept:hover {
+            background: #082e49;
+        }
+
+        .cookie-reject {
+            background: #edf1f3;
+
+            color: #263238;
+        }
+
+        .cookie-reject:hover {
+            background: #dfe5e8;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .header-container {
+                flex-direction: column;
+
+                padding: 20px 0;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+
+            .cookie-content {
+                flex-direction: column;
+
+                align-items: stretch;
+            }
+
+            .cookie-buttons {
+                justify-content: center;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 65px 15px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            main {
+                width: 94%;
+
+                padding: 35px 0;
+            }
+
+            .article,
+            .about,
+            .legal-section {
+                padding: 25px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .cookie-banner {
+                left: 10px;
+
+                right: 10px;
+
+                bottom: 10px;
+            }
+
+            .cookie-buttons {
+                flex-direction: column;
+            }
+
+            .cookie-button {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+    <div class="header-container">
+
+        <a
+            href="https://rcimobilcolombia.pages.dev/"
+            class="logo"
+        >
+            RCI Móvil Colombia
+        </a>
+
+
+        <nav aria-label="Navegación principal">
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#nosotros">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#categorias">
+                        Categorías
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#articulos">
+                        Artículos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacto">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section
+    class="hero"
+    id="inicio"
+>
+
+    <div class="hero-container">
+
+        <h1>
+            Tecnología móvil explicada de forma sencilla
+        </h1>
+
+        <p>
+            RCI Móvil Colombia es un espacio informativo sobre
+            celulares, aplicaciones, tecnología móvil y recursos
+            digitales. Publicamos guías y artículos pensados
+            para ayudarte a comprender mejor la tecnología.
+        </p>
+
+        <a
+            href="#articulos"
+            class="hero-button"
+        >
+            Ver artículos
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTENIDO PRINCIPAL
+========================================================= -->
+
+<main>
+
+
+    <!-- =====================================================
+         SOBRE NOSOTROS
+    ====================================================== -->
+
+    <section id="nosotros">
+
+        <div class="section-title">
+
+            <h2>
+                Sobre RCI Móvil Colombia
+            </h2>
+
+            <p>
+                Información y recursos sobre tecnología móvil
+                para usuarios de Colombia y otros lectores
+                interesados en el mundo digital.
+            </p>
+
+        </div>
+
+
+        <div class="about">
+
+            <h2>
+                Nuestro objetivo
+            </h2>
+
+            <p>
+                RCI Móvil Colombia es un sitio web independiente
+                dedicado a publicar contenido informativo sobre
+                tecnología móvil.
+            </p>
+
+            <p>
+                Nuestro contenido aborda temas relacionados con
+                celulares, aplicaciones, herramientas digitales,
+                configuraciones y recomendaciones generales de
+                uso tecnológico.
+            </p>
+
+            <p>
+                Buscamos explicar los temas de una manera clara,
+                evitando tecnicismos innecesarios y procurando
+                ofrecer información que pueda resultar útil para
+                usuarios con diferentes niveles de experiencia.
+            </p>
+
+            <p>
+                RCI Móvil Colombia no representa, administra ni
+                está afiliado oficialmente a fabricantes de
+                teléfonos, operadores móviles, Google, Apple,
+                Samsung u otras compañías mencionadas en nuestros
+                contenidos, salvo que se indique expresamente
+                lo contrario.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CATEGORÍAS
+    ====================================================== -->
+
+    <section id="categorias">
+
+        <div class="section-title">
+
+            <h2>
+                Categorías
+            </h2>
+
+            <p>
+                Explora diferentes temas relacionados con
+                tecnología y dispositivos móviles.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <div class="category-card">
+
+                <h3>
+                    📱 Celulares
+                </h3>
+
+                <p>
+                    Información general, características,
+                    configuraciones y consejos relacionados
+                    con teléfonos móviles.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <h3>
+                    ⚙️ Guías
+                </h3>
+
+                <p>
+                    Tutoriales y explicaciones para realizar
+                    tareas habituales en dispositivos móviles
+                    y servicios digitales.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <h3>
+                    💻 Tecnología
+                </h3>
+
+                <p>
+                    Noticias informativas, conceptos y recursos
+                    relacionados con tecnología y herramientas
+                    digitales.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PUBLICIDAD
+    ====================================================== -->
+
+    <div class="ad-container">
+
+        <span class="ad-label">
+            Publicidad
+        </span>
+
+        <div class="ad-placeholder">
+            Espacio publicitario
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         ARTÍCULOS
+    ====================================================== -->
+
+    <section id="articulos">
+
+        <div class="section-title">
+
+            <h2>
+                Artículos destacados
+            </h2>
+
+            <p>
+                Guías y contenidos informativos sobre
+                tecnología móvil.
+            </p>
+
+        </div>
+
+
+        <!-- ARTÍCULO 1 -->
+
+        <article class="article">
+
+            <h2>
+                Cómo cuidar la batería de un celular
+            </h2>
+
+            <div class="article-meta">
+                RCI Móvil Colombia · Guía informativa
+            </div>
+
+            <p>
+                La batería es uno de los componentes más
+                importantes de un teléfono móvil. Aunque las
+                baterías modernas están diseñadas para soportar
+                numerosos ciclos de carga, determinados hábitos
+                pueden influir en su rendimiento a largo plazo.
+            </p>
+
+            <h3>
+                Evita temperaturas extremas
+            </h3>
+
+            <p>
+                El calor excesivo puede afectar negativamente
+                a las baterías de iones de litio. Por eso es
+                recomendable evitar dejar el teléfono durante
+                largos periodos expuesto directamente al sol
+                o en lugares con temperaturas elevadas.
+            </p>
+
+            <h3>
+                Utiliza accesorios adecuados
+            </h3>
+
+            <p>
+                Cuando sea posible, utiliza cargadores y cables
+                compatibles con las especificaciones del
+                fabricante del dispositivo.
+            </p>
+
+            <h3>
+                Mantén actualizado el teléfono
+            </h3>
+
+            <p>
+                Las actualizaciones del sistema pueden incluir
+                mejoras relacionadas con el rendimiento, la
+                seguridad y la administración de energía.
+            </p>
+
+            <p>
+                Los hábitos recomendados pueden variar según
+                el modelo concreto del dispositivo. Para obtener
+                instrucciones específicas, consulta siempre la
+                documentación oficial del fabricante.
+            </p>
+
+        </article>
+
+
+        <!-- ARTÍCULO 2 -->
+
+        <article class="article">
+
+            <h2>
+                Qué revisar antes de comprar un celular
+            </h2>
+
+            <div class="article-meta">
+                RCI Móvil Colombia · Consejos de compra
+            </div>
+
+            <p>
+                Elegir un teléfono puede resultar complicado
+                debido a la gran cantidad de modelos disponibles.
+                Antes de realizar una compra conviene identificar
+                las características que realmente necesitas.
+            </p>
+
+            <h3>
+                Procesador y memoria
+            </h3>
+
+            <p>
+                El procesador influye en la capacidad del
+                dispositivo para ejecutar aplicaciones y realizar
+                diferentes tareas. La memoria RAM también puede
+                influir en la capacidad de mantener varias
+                aplicaciones abiertas.
+            </p>
+
+            <h3>
+                Capacidad de almacenamiento
+            </h3>
+
+            <p>
+                Las fotografías, vídeos, aplicaciones y documentos
+                pueden ocupar una cantidad considerable de espacio.
+                Por ello, es conveniente calcular cuánto
+                almacenamiento necesitas antes de elegir un
+                dispositivo.
+            </p>
+
+            <h3>
+                Pantalla y batería
+            </h3>
+
+            <p>
+                El tamaño de pantalla, la resolución y la duración
+                de la batería son otros aspectos que pueden ser
+                relevantes dependiendo del uso que vayas a darle
+                al teléfono.
+            </p>
+
+            <h3>
+                Compatibilidad
+            </h3>
+
+            <p>
+                También conviene comprobar la compatibilidad del
+                dispositivo con las redes móviles, tecnologías
+                inalámbricas y servicios disponibles en tu región.
+            </p>
+
+        </article>
+
+
+        <!-- ARTÍCULO 3 -->
+
+        <article class="article">
+
+            <h2>
+                Consejos para mantener seguro un teléfono móvil
+            </h2>
+
+            <div class="article-meta">
+                RCI Móvil Colombia · Seguridad digital
+            </div>
+
+            <p>
+                Los teléfonos móviles almacenan fotografías,
+                conversaciones, documentos, cuentas y otros datos
+                personales. Adoptar algunas medidas básicas puede
+                ayudar a reducir determinados riesgos de seguridad.
+            </p>
+
+            <h3>
+                Utiliza un método de bloqueo
+            </h3>
+
+            <p>
+                Configurar un PIN, contraseña, patrón o sistema
+                biométrico compatible puede impedir que otras
+                personas accedan fácilmente al contenido del
+                dispositivo.
+            </p>
+
+            <h3>
+                Mantén actualizado el sistema
+            </h3>
+
+            <p>
+                Las actualizaciones pueden corregir vulnerabilidades
+                y mejorar la seguridad del dispositivo.
+            </p>
+
+            <h3>
+                Revisa los permisos de las aplicaciones
+            </h3>
+
+            <p>
+                Antes de conceder permisos a una aplicación,
+                comprueba si realmente necesita acceso a funciones
+                como ubicación, cámara, micrófono o contactos.
+            </p>
+
+            <h3>
+                Evita enlaces sospechosos
+            </h3>
+
+            <p>
+                No introduzcas contraseñas ni información sensible
+                después de acceder a enlaces cuyo origen no puedas
+                verificar.
+            </p>
+
+        </article>
+
+
+        <!-- ARTÍCULO 4 -->
+
+        <article class="article">
+
+            <h2>
+                Cómo liberar espacio de almacenamiento
+            </h2>
+
+            <div class="article-meta">
+                RCI Móvil Colombia · Guía práctica
+            </div>
+
+            <p>
+                Cuando el almacenamiento de un teléfono comienza
+                a llenarse, algunas funciones pueden resultar
+                menos cómodas de utilizar. Una revisión periódica
+                permite identificar archivos que ya no necesitas.
+            </p>
+
+            <ul>
+
+                <li>
+                    Revisa fotografías y vídeos antiguos.
+                </li>
+
+                <li>
+                    Elimina archivos descargados que ya no utilices.
+                </li>
+
+                <li>
+                    Comprueba las aplicaciones instaladas.
+                </li>
+
+                <li>
+                    Revisa los archivos duplicados.
+                </li>
+
+                <li>
+                    Utiliza las herramientas de almacenamiento
+                    disponibles en el sistema.
+                </li>
+
+            </ul>
+
+            <p>
+                Antes de eliminar fotografías, documentos u otros
+                archivos importantes, asegúrate de disponer de una
+                copia de seguridad si deseas conservarlos.
+            </p>
+
+        </article>
+
+
+        <!-- ARTÍCULO 5 -->
+
+        <article class="article">
+
+            <h2>
+                Qué hacer antes de vender o regalar un celular
+            </h2>
+
+            <div class="article-meta">
+                RCI Móvil Colombia · Guía informativa
+            </div>
+
+            <p>
+                Cuando vas a entregar un teléfono a otra persona,
+                es recomendable realizar varios pasos para proteger
+                tus datos personales.
+            </p>
+
+            <h3>
+                Haz una copia de seguridad
+            </h3>
+
+            <p>
+                Guarda las fotografías, contactos, documentos y
+                otros archivos que quieras conservar.
+            </p>
+
+            <h3>
+                Cierra las cuentas
+            </h3>
+
+            <p>
+                Revisa las cuentas configuradas en el dispositivo
+                y sigue las instrucciones oficiales del sistema
+                operativo para eliminarlas correctamente.
+            </p>
+
+            <h3>
+                Restablece el dispositivo
+            </h3>
+
+            <p>
+                Después de realizar la copia de seguridad y retirar
+                tus cuentas, puedes utilizar la función oficial de
+                restablecimiento del dispositivo.
+            </p>
+
+            <p>
+                Los pasos concretos pueden cambiar según el modelo
+                y el sistema operativo. Consulta la documentación
+                oficial correspondiente.
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!-- =====================================================
+         PUBLICIDAD
+    ====================================================== -->
+
+    <div class="ad-container">
+
+        <span class="ad-label">
+            Publicidad
+        </span>
+
+        <div class="ad-placeholder">
+            Espacio publicitario
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CONTACTO
+    ====================================================== -->
+
+    <section id="contacto">
+
+        <div class="contact-box">
+
+            <h2>
+                Contacto
+            </h2>
+
+            <p>
+                Si tienes preguntas, sugerencias, comentarios
+                o deseas comunicarte con RCI Móvil Colombia,
+                puedes hacerlo mediante nuestro correo electrónico.
+            </p>
+
+            <!-- CAMBIA ESTE CORREO POR UNO REAL -->
+
+            <p>
+                <strong>
+                    contacto@rcimobilcolombia.com
+                </strong>
+            </p>
+
+            <p>
+                Procuraremos responder las consultas recibidas
+                dentro de un plazo razonable.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         POLÍTICA DE PRIVACIDAD
+    ====================================================== -->
+
+    <section
+        id="privacidad"
+        class="legal-section"
+    >
+
+        <h2>
+            Política de Privacidad
+        </h2>
+
+        <p>
+            Última actualización: octubre de 2026.
+        </p>
+
+        <p>
+            En RCI Móvil Colombia respetamos la privacidad de
+            nuestros visitantes. Esta Política de Privacidad
+            explica qué información puede recopilarse mediante
+            el sitio y con qué finalidades puede utilizarse.
+        </p>
+
+
+        <h3>
+            1. Responsable del sitio
+        </h3>
+
+        <p>
+            Responsable:
+            <strong>
+                [NOMBRE REAL DEL TITULAR]
+            </strong>
+        </p>
+
+        <p>
+            Sitio web:
+            <strong>
+                https://rcimobilcolombia.pages.dev/
+            </strong>
+        </p>
+
+        <p>
+            Correo:
+            <strong>
+                contacto@rcimobilcolombia.com
+            </strong>
+        </p>
+
+
+        <h3>
+            2. Información que puede recopilarse
+        </h3>
+
+        <p>
+            Dependiendo de cómo utilices el sitio, pueden
+            recopilarse determinados datos técnicos relacionados
+            con la navegación.
+        </p>
+
+        <p>
+            Estos datos pueden incluir información como dirección
+            IP, navegador, sistema operativo, tipo de dispositivo,
+            páginas visitadas, fecha y hora de acceso y datos
+            técnicos relacionados con el funcionamiento del sitio.
+        </p>
+
+
+        <h3>
+            3. Finalidad del tratamiento
+        </h3>
+
+        <p>
+            La información puede utilizarse para mantener,
+            proteger y mejorar el funcionamiento del sitio,
+            analizar el tráfico, detectar problemas técnicos,
+            comprender cómo se utiliza el contenido y mejorar
+            la experiencia de los visitantes.
+        </p>
+
+
+        <h3>
+            4. Cookies
+        </h3>
+
+        <p>
+            RCI Móvil Colombia puede utilizar cookies y tecnologías
+            similares.
+        </p>
+
+        <p>
+            Las cookies pueden utilizarse para recordar preferencias,
+            realizar análisis estadísticos, mejorar determinadas
+            funciones y, cuando corresponda, permitir servicios
+            publicitarios de terceros.
+        </p>
+
+
+        <h3>
+            5. Publicidad
+        </h3>
+
+        <p>
+            RCI Móvil Colombia puede mostrar publicidad mediante
+            proveedores externos, incluido Google AdSense, si
+            este servicio se incorpora al sitio.
+        </p>
+
+        <p>
+            Los proveedores publicitarios pueden utilizar cookies
+            y tecnologías similares para proporcionar, medir o
+            personalizar publicidad de acuerdo con sus propias
+            políticas y las preferencias de consentimiento
+            correspondientes.
+        </p>
+
+
+        <h3>
+            6. Servicios de terceros
+        </h3>
+
+        <p>
+            El sitio puede utilizar servicios externos para
+            alojamiento, análisis, seguridad, publicidad u otras
+            funciones.
+        </p>
+
+        <p>
+            Estos proveedores pueden procesar determinados datos
+            técnicos de acuerdo con sus respectivas políticas de
+            privacidad.
+        </p>
+
+
+        <h3>
+            7. Enlaces externos
+        </h3>
+
+        <p>
+            Algunos contenidos pueden incluir enlaces hacia
+            páginas externas. RCI Móvil Colombia no controla
+            necesariamente las prácticas de privacidad de esos
+            sitios.
+        </p>
+
+
+        <h3>
+            8. Seguridad
+        </h3>
+
+        <p>
+            Adoptamos medidas razonables para proteger la
+            información relacionada con el funcionamiento del
+            sitio. Sin embargo, ningún sistema conectado a
+            Internet puede garantizar una seguridad absoluta.
+        </p>
+
+
+        <h3>
+            9. Derechos
+        </h3>
+
+        <p>
+            Dependiendo de la legislación aplicable, los usuarios
+            pueden tener derechos relacionados con el acceso,
+            rectificación, eliminación, oposición o limitación
+            del tratamiento de determinados datos personales.
+        </p>
+
+
+        <h3>
+            10. Cambios
+        </h3>
+
+        <p>
+            Esta política puede actualizarse cuando sea necesario
+            para reflejar cambios en el sitio, en los servicios
+            utilizados o en las obligaciones legales aplicables.
+        </p>
+
+
+        <h3>
+            11. Contacto
+        </h3>
+
+        <p>
+            Para consultas relacionadas con privacidad:
+        </p>
+
+        <p>
+            <strong>
+                contacto@rcimobilcolombia.com
+            </strong>
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         COOKIES
+    ====================================================== -->
+
+    <section
+        id="cookies"
+        class="legal-section"
+    >
+
+        <h2>
+            Política de Cookies
+        </h2>
+
+        <p>
+            Las cookies son pequeños archivos que pueden
+            almacenarse en el dispositivo del usuario cuando
+            visita un sitio web.
+        </p>
+
+
+        <h3>
+            ¿Para qué utilizamos cookies?
+        </h3>
+
+        <p>
+            Pueden utilizarse para recordar determinadas
+            preferencias, analizar el uso del sitio, mejorar
+            determinadas funciones y proporcionar servicios
+            publicitarios cuando estos estén habilitados.
+        </p>
+
+
+        <h3>
+            Cookies de terceros
+        </h3>
+
+        <p>
+            Los servicios externos integrados en el sitio pueden
+            utilizar sus propias cookies o tecnologías similares.
+        </p>
+
+
+        <h3>
+            Gestión de cookies
+        </h3>
+
+        <p>
+            El usuario puede controlar determinadas cookies
+            mediante las opciones de consentimiento disponibles
+            y mediante la configuración de su navegador.
+        </p>
+
+        <p>
+            La disponibilidad de determinadas funciones puede
+            variar dependiendo de las preferencias seleccionadas.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         TÉRMINOS
+    ====================================================== -->
+
+    <section
+        id="terminos"
+        class="legal-section"
+    >
+
+        <h2>
+            Términos y Condiciones
+        </h2>
+
+        <p>
+            Al acceder a RCI Móvil Colombia, el visitante acepta
+            utilizar el sitio de manera responsable y respetando
+            la legislación aplicable.
+        </p>
+
+
+        <h3>
+            Uso del contenido
+        </h3>
+
+        <p>
+            El contenido publicado en RCI Móvil Colombia tiene
+            carácter informativo y educativo general.
+        </p>
+
+
+        <h3>
+            Exactitud de la información
+        </h3>
+
+        <p>
+            Procuramos proporcionar información clara y actualizada.
+            No obstante, determinados datos pueden cambiar con
+            el tiempo.
+        </p>
+
+        <p>
+            Las características, precios, disponibilidad y
+            especificaciones de productos o servicios pueden
+            cambiar. Cuando sea necesario, el lector debe
+            comprobar la información directamente con el
+            fabricante o proveedor correspondiente.
+        </p>
+
+
+        <h3>
+            Enlaces externos
+        </h3>
+
+        <p>
+            RCI Móvil Colombia puede incluir enlaces hacia sitios
+            externos. La inclusión de un enlace no significa
+            necesariamente que RCI Móvil Colombia controle,
+            administre o respalde el contenido de ese sitio.
+        </p>
+
+
+        <h3>
+            Propiedad intelectual
+        </h3>
+
+        <p>
+            Salvo que se indique expresamente lo contrario,
+            los contenidos originales publicados en este sitio
+            pertenecen a sus respectivos titulares.
+        </p>
+
+        <p>
+            No está permitido copiar, reproducir o redistribuir
+            contenido original del sitio de manera que infrinja
+            los derechos de sus titulares.
+        </p>
+
+
+        <h3>
+            Marcas de terceros
+        </h3>
+
+        <p>
+            Los nombres, logotipos y marcas de fabricantes,
+            aplicaciones, sistemas operativos u otros servicios
+            pertenecen a sus respectivos propietarios.
+        </p>
+
+
+        <h3>
+            Modificaciones
+        </h3>
+
+        <p>
+            RCI Móvil Colombia puede modificar, actualizar,
+            ampliar o retirar contenidos del sitio cuando sea
+            necesario.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         AVISO LEGAL
+    ====================================================== -->
+
+    <section
+        id="aviso-legal"
+        class="legal-section"
+    >
+
+        <h2>
+            Aviso Legal
+        </h2>
+
+        <p>
+            RCI Móvil Colombia es un sitio web independiente
+            dedicado a la publicación de información y recursos
+            relacionados con tecnología móvil.
+        </p>
+
+
+        <h3>
+            Titular
+        </h3>
+
+        <p>
+            Nombre o empresa:
+            <strong>
+                [NOMBRE REAL DEL TITULAR]
+            </strong>
+        </p>
+
+        <p>
+            País:
+            <strong>
+                Colombia
+            </strong>
+        </p>
+
+        <p>
+            Sitio:
+            <strong>
+                https://rcimobilcolombia.pages.dev/
+            </strong>
+        </p>
+
+        <p>
+            Correo electrónico:
+            <strong>
+                contacto@rcimobilcolombia.com
+            </strong>
+        </p>
+
+
+        <h3>
+            Independencia editorial
+        </h3>
+
+        <p>
+            RCI Móvil Colombia es un proyecto independiente.
+            La utilización de nombres de productos, fabricantes
+            o servicios de terceros tiene únicamente fines
+            informativos cuando así se indique.
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div>
+
+            <h3>
+                RCI Móvil Colombia
+            </h3>
+
+            <p>
+                Información, guías y recursos sobre celulares,
+                tecnología móvil y herramientas digitales.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Navegación
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#nosotros">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#categorias">
+                        Categorías
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#articulos">
+                        Artículos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacto">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Información legal
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#privacidad">
+                        Política de privacidad
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#cookies">
+                        Política de cookies
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#terminos">
+                        Términos y condiciones
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#aviso-legal">
+                        Aviso legal
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 RCI Móvil Colombia.
+        Todos los derechos reservados.
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     AVISO DE COOKIES
+========================================================= -->
+
+<div
+    class="cookie-banner"
+    id="cookieBanner"
+    role="dialog"
+    aria-label="Preferencias de cookies"
+>
+
+    <div class="cookie-content">
+
+
+        <div class="cookie-text">
+
+            <strong>
+                Preferencias de privacidad
+            </strong>
+
+            Utilizamos cookies y tecnologías similares para
+            mejorar el funcionamiento del sitio, analizar su
+            uso y, cuando corresponda, proporcionar publicidad.
+
+            <br>
+
+            <a href="#cookies">
+                Leer la política de cookies
+            </a>
+
+        </div>
+
+
+        <div class="cookie-buttons">
+
+            <button
+                type="button"
+                class="cookie-button cookie-reject"
+                onclick="rejectCookies()"
+            >
+                Rechazar
+            </button>
+
+
+            <button
+                type="button"
+                class="cookie-button cookie-accept"
+                onclick="acceptCookies()"
+            >
+                Aceptar
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    function acceptCookies() {
+
+        localStorage.setItem(
+            "rci_cookie_consent",
+            "accepted"
+        );
+
+        document.getElementById(
+            "cookieBanner"
+        ).style.display = "none";
+
+    }
+
+
+    function rejectCookies() {
+
+        localStorage.setItem(
+            "rci_cookie_consent",
+            "rejected"
+        );
+
+        document.getElementById(
+            "cookieBanner"
+        ).style.display = "none";
+
+    }
+
+
+    function checkCookieConsent() {
+
+        const consent =
+            localStorage.getItem(
+                "rci_cookie_consent"
+            );
+
+        if (consent === "accepted" ||
+            consent === "rejected") {
+
+            document.getElementById(
+                "cookieBanner"
+            ).style.display = "none";
+
+        }
+
+    }
+
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+
+            checkCookieConsent();
+
+        }
+    );
+
+</script>
+
+
+</body>
+</html>
